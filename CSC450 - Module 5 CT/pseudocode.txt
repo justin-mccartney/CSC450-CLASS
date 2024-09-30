@@ -1,0 +1,43 @@
+Start
+
+Include necessary libraries:
+    iostream (for standard input/output)
+    fstream (for file handling)
+    string (for string manipulation)
+    algorithm (for reverse function)
+
+Define the function appendToFile:
+    Input: fileName (the name of the file to append data to)
+    Open file in append mode (ios::app)
+    Check if file is opened:
+        If not, display error message and return
+    Get user input:
+        Prompt the user for input
+        Use getline to capture the full line of text
+    Write user input to the file
+    Close the file
+    Display success message
+
+Define the function reverseFileContents:
+    Input: inputFileName (the name of the file to read from) and outputFileName (the name of the file to write the reversed content to)
+    Open the input file for reading
+    Check if file is opened:
+        If not, display error message and return
+    Read the entire content of the file into a string
+    Close the input file
+    Reverse the string content using the std::reverse function
+    Open the output file for writing
+    Check if output file is opened:
+        If not, display error message and return
+    Write the reversed content to the output file
+    Close the output file
+    Display success message
+
+In the main function:
+    Declare inputFileName as "CSC450_CT5_mod5.txt"
+    Declare outputFileName as "CSC450-mod5-reverse.txt"
+    Call appendToFile function with inputFileName
+    Call reverseFileContents function with inputFileName and outputFileName
+    Exit the program
+
+End
