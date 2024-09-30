@@ -1,0 +1,18 @@
+Create a main function.
+
+Define two functions:
+    countUp to count from 0 to 20.
+    countDown to count from 20 to 0.
+
+Include necessary headers:
+    iostream for standard input/output.
+    thread for thread creation and management.
+    mutex to handle any shared resources between threads (though in this case, the threads aren't sharing data, it's good practice to mention).
+
+Use std::thread to create two threads:
+    Thread 1 calls the countUp function.
+    Thread 2 waits for Thread 1 to finish and then calls countDown.
+
+Join the threads to ensure that both complete their tasks.
+
+Compile and run the code.
